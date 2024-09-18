@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Slider</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="./1.jpg" alt="Image 1">
+                <div class="caption"><p>Hi Mr.Ahmed moharam<h1> I'm Ibrahem elhabbal</h1> I'm a MERN stack developer.</br> I will be in the top 10 in this intern.</p></div>
+            </div>
+            <div class="slide">
+                <img src="./2.jpg" alt="Image 2">
+                <div class="caption"><p>I was late in delivering the tasks because my laptop had a problem.</p></div>
+            </div>
+            <div class="slide">
+                <img src="./3.jpg" alt="Image 3">
+                <div class="caption"><p>This is my favorite actor, say hello to him.</p></div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        <div class="pagination">
+            <span class="dot" onclick="setSlide(0)"></span>
+            <span class="dot" onclick="setSlide(1)"></span>
+            <span class="dot" onclick="setSlide(2)"></span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
